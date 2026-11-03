@@ -32,7 +32,7 @@ The primary need guides the page. Give the secondary card one contrasting need t
 | Decision                                 | Agreement      |
 | ---------------------------------------- | -------------- |
 | Brand name                               | Lukewarm |
-| One-sentence promise                     | Not chosen yet |
+| One-sentence promise                     | Simple shirt. Your point of view. |
 | Primary archetype: the brand's character | Creator |
 | Three voice traits                       | Laid-back, contrarian; third trait not chosen yet |
 | One example line in this voice           | Not chosen yet |
