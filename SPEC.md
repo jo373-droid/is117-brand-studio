@@ -49,7 +49,7 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 | Shared headline / support / action                | “Simple shirt. Your point of view.” / “An ordinary white tee, ready for the way you wear it.” / “See the T-shirt.” |
 | Modernist preview, reference, and annotations     | `public/explorations.html`; Herbert Bayer, *Architektur Lichtbilder Vortrag Professor Hans Poelzig* (1926), MoMA; grid, asymmetry, sans-serif clarity; risk: may feel too orderly. |
 | Postmodernist preview, reference, and annotations | `public/explorations.html`; Ettore Sottsass, *Carlton* (1981), MoMA; playful geometry and mixed cues; risk: decoration may distract. |
-| Chosen direction and reason                       | Not chosen yet        |
+| Chosen direction and reason                       | Postmodernist; learner chose “Playful and contrarian”; a specific detail and audience reason still need to be stated. |
 | Original SVG logo                                 | Not chosen yet        |
 | Monochrome and small-size variants                | Not chosen yet        |
 | Logo review at actual use size                    | Not checked yet       |
