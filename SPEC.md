@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
+- Stage: Lukewarm storefront and live style guide built on the feature branch; learner review pending.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Status: BRAND-001 implementation built; browser review, one check explanation, and LEARNING.md review pending.
+- Next small decision: Inspect the local storefront, style guide, and previews; report a first impression.
 
 ## Product boundary
 
@@ -19,24 +19,24 @@ The product is the same white T-shirt throughout the comparison. The baseline of
 
 The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.
 
-| Tiny card                             | Primary audience          | Secondary audience        |
-| ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |
+| Tiny card                             | Primary audience                              | Secondary audience                                       |
+| ------------------------------------- | --------------------------------------------- | -------------------------------------------------------- |
+| Person in a concrete situation        | Uses a simple shirt to express creative style | Wants an everyday basic and clear size/price information |
+| Goal or meaning they seek             | A more defined look while feeling loose       | Find a straightforward everyday option                   |
+| Concern before choosing               | Not chosen yet                                | Clear size and price details                             |
+| What the page should help them decide | Not chosen yet                                | Whether the size and fictional price suit them           |
+| Evidence or assumption                | Assumption; not validated                     | Assumption; not validated                                |
 
 ## Early brand brief
 
-| Decision                                 | Agreement      |
-| ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
-| One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
-| One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Decision                                 | Agreement                                                                 |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| Brand name                               | Lukewarm                                                                  |
+| One-sentence promise                     | Simple shirt. Your point of view.                                         |
+| Primary archetype: the brand's character | Creator                                                                   |
+| Three voice traits                       | Laid-back, contrarian, and clear (learner accepted the proposed voice)    |
+| One example line in this voice           | Not chosen yet                                                            |
+| Learner's predicted audience effect      | The tilted label feels unexpected; broader audience effect not stated yet |
 
 ## Visual decision
 
@@ -44,25 +44,25 @@ Compare two small hero previews before building the whole page. Hold the product
 
 A simple original SVG wordmark is enough. Show small-size and one-color presentations; they may use the same asset when it works.
 
-| Item                                              | Agreement or evidence |
-| ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
-| Chosen direction and reason                       | Not chosen yet        |
-| Original SVG logo                                 | Not chosen yet        |
-| Monochrome and small-size variants                | Not chosen yet        |
-| Logo review at actual use size                    | Not checked yet       |
-| Shared palette, typography, spacing, and assets   | Not chosen yet        |
+| Item                                              | Agreement or evidence                                                                                                                                                              |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shared headline / support / action                | “Simple shirt. Your point of view.” / “An ordinary white tee, ready for the way you wear it.” / “See the T-shirt.”                                                                 |
+| Modernist preview, reference, and annotations     | `public/explorations.html`; Herbert Bayer, _Architektur Lichtbilder Vortrag Professor Hans Poelzig_ (1926), MoMA; grid, asymmetry, sans-serif clarity; risk: may feel too orderly. |
+| Postmodernist preview, reference, and annotations | `public/explorations.html`; Ettore Sottsass, _Carlton_ (1981), MoMA; playful geometry and mixed cues; risk: decoration may distract.                                               |
+| Chosen direction and reason                       | Postmodernist; learner chose “Playful and contrarian” and the tilted sticker because it feels unexpected.                                                                          |
+| Original SVG logo                                 | public/assets/wordmark.svg; Lukewarm wordmark with a tilted label mark. AI-created proposal; learner review pending.                                                               |
+| Monochrome and small-size variants                | public/assets/wordmark-mono.svg; single-ink vector shown beside the color wordmark.                                                                                                |
+| Logo review at actual use size                    | Pending learner browser review.                                                                                                                                                    |
+| Shared palette, typography, spacing, and assets   | Warm paper, deep ink, lilac, sticker yellow, tomato action; shared system typography, spacing tokens, CSS, and wordmark assets.                                                    |
 
 ## Ethical persuasion
 
 Choose two applications that help the visitor make a voluntary, informed decision. Record their real implementation and mechanism rather than a principle name alone. Required size selection or validation alone does not establish consistency. Do not invent social proof, scarcity, authority, or product facts.
 
-| Principle      | Actual copy or interaction | Visitor benefit / factual support |
-| -------------- | -------------------------- | --------------------------------- |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
-| Not chosen yet | Not chosen yet             | Not chosen yet                    |
+| Principle                                                         | Actual copy or interaction                                                                      | Visitor benefit / factual support                                                                        |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Unity / self-identification (AI proposal; learner review pending) | “If you like everyday pieces with a little edge, you’re in the right place.”                    | Lets visitors decide whether the brand’s point of view fits their taste; no claim about other customers. |
+| Reciprocity (AI proposal; learner review pending)                 | “Try the white tee with one bold layer or accessory you already own. Keep what feels like you.” | Offers a free styling idea without gating it or making a product claim.                                  |
 
 ## BRAND-001 — first branded storefront and live style guide
 
@@ -82,9 +82,9 @@ Keep when:
 
 Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
 
-| Spec ID   | Files           | Issue / PR      | Actual checks and observations            |
-| --------- | --------------- | --------------- | ----------------------------------------- |
-| BRAND-001 | Not changed yet | Not created yet | Not run yet; learner observations pending |
+| Spec ID   | Files                                                                                                                                               | Issue / PR                                                             | Actual checks and observations                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BRAND-001 | public/index.html, public/styleguide.html, public/styles.css, public/explorations.html, public/assets/wordmark.svg, public/assets/wordmark-mono.svg | https://github.com/jo373-droid/is117-brand-studio/issues/1; https://github.com/jo373-droid/is117-brand-studio/pull/2 | Formatting and lint passed; all 7 server tests passed. 10 Playwright tests could not launch because Chromium is not installed. Manual browser check: submitting with no size showed an error and kept the bag at 0; keyboard-selected M added one item; emptying returned it to 0. The storefront, style guide, and previews had no horizontal overflow at 390px. Learner’s own observations and check explanation pending. |
 
 ## Later
 

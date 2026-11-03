@@ -1,14 +1,15 @@
 /* Shared brand tokens. Change these after you agree on your brand direction.
    Both the storefront and the live style guide use this file. */
 :root {
-  --color-paper: #f6f5f0;
-  --color-ink: #171a18;
-  --color-muted: #5a615b;
-  --color-line: #d1d5cc;
-  --color-accent: #e3ef56;
-  --color-soft: #e8eae1;
+  --color-paper: #f7f2eb;
+  --color-ink: #201a20;
+  --color-muted: #514853;
+  --color-line: #302633;
+  --color-accent: #e8ff54;
+  --color-soft: #f3d7fa;
+  --color-action: #f3472f;
   --color-white: #fff;
-  --color-danger: #992e28;
+  --color-danger: #a52b21;
   --font-body:
     system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
   --font-display:
@@ -1293,5 +1294,138 @@ legend {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* Lukewarm identity: playful interruptions around clear product information. */
+.lukewarm-theme .starter-notice {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.lukewarm-theme .starter-notice a {
+  font-weight: 700;
+}
+
+.lukewarm-theme .site-header {
+  border-bottom: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .wordmark {
+  width: 160px;
+}
+
+.lukewarm-theme .main-nav {
+  font-weight: 650;
+}
+
+.lukewarm-theme .nav-link[aria-current="page"] {
+  border-bottom-width: 2px;
+}
+
+.lukewarm-theme .product-visual {
+  overflow: hidden;
+  border: 2px solid var(--color-ink);
+  background: var(--color-soft);
+}
+
+.lukewarm-theme .product-visual::before {
+  content: "";
+  position: absolute;
+  width: 34%;
+  aspect-ratio: 1;
+  top: 17%;
+  left: 12%;
+  z-index: 0;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.lukewarm-theme .shirt-image {
+  position: relative;
+  z-index: 1;
+}
+
+.lukewarm-theme .visual-label {
+  z-index: 2;
+}
+
+.lukewarm-theme .visual-label span:last-child {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--color-ink);
+  background: var(--color-accent);
+  transform: rotate(6deg);
+}
+
+.lukewarm-theme .image-caption {
+  position: relative;
+  z-index: 2;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.lukewarm-theme .product-information h1 {
+  max-width: none;
+  font-size: clamp(3.6rem, 5vw, 4.8rem);
+}
+
+.lukewarm-theme .product-intro {
+  font-weight: 600;
+}
+
+.lukewarm-theme .price {
+  color: var(--color-action);
+}
+
+body.lukewarm-theme .button-primary {
+  background: var(--color-action);
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+
+body.lukewarm-theme .button-primary:hover {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.lukewarm-theme .starter-next {
+  background: var(--color-soft);
+  border: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .starter-next > div {
+  border-top: 1px solid var(--color-ink);
+  padding-top: 1rem;
+}
+
+.lukewarm-theme .starter-next h3 {
+  font-size: 1.1rem;
+}
+
+.lukewarm-theme .starter-next .guide-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.lukewarm-theme .site-footer {
+  border-top: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .color-swatch {
+  border: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .palette-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width <= 760px) {
+  .lukewarm-theme .product-visual::before {
+    width: 42%;
+  }
+
+  .lukewarm-theme .starter-next > .guide-note {
+    grid-column: 1;
   }
 }
