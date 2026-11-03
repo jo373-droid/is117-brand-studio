@@ -3,40 +3,208 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Two same-copy visual directions for the Lukewarm white T-shirt." />
+    <meta
+      name="description"
+      content="Two same-copy visual directions for the Lukewarm white T-shirt."
+    />
     <title>Lukewarm — hero directions</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      .explore-page { padding-block: 2rem 5rem; }
-      .explore-intro { max-width: 760px; padding-block: 2rem 3rem; }
-      .explore-intro h1 { font-size: clamp(2.8rem, 7vw, 6rem); margin-top: .4rem; }
-      .explore-intro p:last-child { max-width: 620px; margin-top: 1rem; }
-      .preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
-      .preview { min-width: 0; }
-      .preview-label { display: flex; justify-content: space-between; gap: 1rem; padding-block: .8rem; border-top: 1px solid var(--color-line); font: .68rem var(--font-mono); text-transform: uppercase; letter-spacing: .04em; }
-      .hero-card { min-height: 560px; position: relative; overflow: hidden; isolation: isolate; padding: clamp(1.4rem, 3vw, 3rem); }
-      .hero-card h2 { position: relative; z-index: 2; max-width: 9ch; margin: .5rem 0 1rem; font-size: clamp(2.3rem, 4.2vw, 4.5rem); line-height: .98; }
-      .hero-card p { position: relative; z-index: 2; max-width: 26ch; }
-      .hero-card .button { position: relative; z-index: 2; margin-top: 1.5rem; }
-      .hero-shirt { position: absolute; width: 52%; height: auto; right: 2%; bottom: 1%; z-index: 1; }
-      .modern-card { display: grid; align-content: start; background: #f1efe8; color: #171817; border: 1px solid #171817; }
-      .modern-card::before { content: "01"; position: absolute; top: 1.4rem; right: 1.4rem; font: .72rem var(--font-mono); }
-      .modern-card .hero-shirt { width: 49%; right: 0; bottom: -2%; }
-      .modern-card .button-primary { background: #1839c5; border-color: #1839c5; color: white; }
-      .modern-index { margin-top: auto; padding-top: 2rem; font: .65rem var(--font-mono); letter-spacing: .03em; }
-      .post-card { background: #f3d7fa; color: #17131c; border: 1px solid #17131c; }
-      .post-card::before { content: "SAME TEE / DIFFERENT MOOD"; position: absolute; top: 2rem; right: -2.6rem; z-index: 3; transform: rotate(8deg); padding: .5rem 2.5rem; background: #e8ff54; font: .58rem var(--font-mono); }
-      .post-card::after { content: "NO RULES"; position: absolute; left: 48%; top: 46%; z-index: 2; transform: rotate(-12deg); color: #f3472f; font: 700 clamp(1rem, 2vw, 1.7rem) var(--font-display); }
-      .post-card .hero-shirt { width: 51%; right: 0; bottom: 0; transform: rotate(5deg); }
-      .post-card .button-primary { background: #f3472f; border-color: #17131c; color: #17131c; box-shadow: 4px 4px 0 #17131c; }
-      .post-tag { position: absolute; left: 53%; top: 12%; z-index: 2; padding: .55rem .7rem; background: #e8ff54; border: 1px solid #17131c; border-radius: 50%; transform: rotate(9deg); font: .62rem var(--font-mono); }
-      .annotation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.2rem; }
-      .annotation-grid h3 { font-size: .85rem; letter-spacing: 0; }
-      .annotation-grid p { margin-top: .5rem; font-size: .77rem; color: var(--color-muted); }
-      .annotation-grid a { color: var(--color-ink); }
-      .same-copy { margin-top: 2rem; padding: 1rem 1.2rem; background: var(--color-soft); font-size: .78rem; }
-      @media (max-width: 760px) { .preview-grid, .annotation-grid { grid-template-columns: 1fr; } .hero-card { min-height: 500px; } .hero-card h2 { font-size: clamp(2.7rem, 11vw, 4.3rem); } }
-      @media (max-width: 420px) { .hero-card { min-height: 470px; } .hero-shirt { width: 62%; } .modern-card .hero-shirt, .post-card .hero-shirt { width: 60%; } }
+      .explore-page {
+        padding-block: 2rem 5rem;
+      }
+      .explore-intro {
+        max-width: 760px;
+        padding-block: 2rem 3rem;
+      }
+      .explore-intro h1 {
+        font-size: clamp(2.8rem, 7vw, 6rem);
+        margin-top: 0.4rem;
+      }
+      .explore-intro p:last-child {
+        max-width: 620px;
+        margin-top: 1rem;
+      }
+      .preview-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+      }
+      .preview {
+        min-width: 0;
+      }
+      .preview-label {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-block: 0.8rem;
+        border-top: 1px solid var(--color-line);
+        font: 0.68rem var(--font-mono);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .hero-card {
+        min-height: 560px;
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        padding: clamp(1.4rem, 3vw, 3rem);
+      }
+      .hero-card h2 {
+        position: relative;
+        z-index: 2;
+        max-width: 9ch;
+        margin: 0.5rem 0 1rem;
+        font-size: clamp(2.3rem, 4.2vw, 4.5rem);
+        line-height: 0.98;
+      }
+      .hero-card p {
+        position: relative;
+        z-index: 2;
+        max-width: 26ch;
+      }
+      .hero-card .button {
+        position: relative;
+        z-index: 2;
+        margin-top: 1.5rem;
+      }
+      .hero-shirt {
+        position: absolute;
+        width: 52%;
+        height: auto;
+        right: 2%;
+        bottom: 1%;
+        z-index: 1;
+      }
+      .modern-card {
+        display: grid;
+        align-content: start;
+        background: #f1efe8;
+        color: #171817;
+        border: 1px solid #171817;
+      }
+      .modern-card::before {
+        content: "01";
+        position: absolute;
+        top: 1.4rem;
+        right: 1.4rem;
+        font: 0.72rem var(--font-mono);
+      }
+      .modern-card .hero-shirt {
+        width: 49%;
+        right: 0;
+        bottom: -2%;
+      }
+      .modern-card .button-primary {
+        background: #1839c5;
+        border-color: #1839c5;
+        color: white;
+      }
+      .modern-index {
+        margin-top: auto;
+        padding-top: 2rem;
+        font: 0.65rem var(--font-mono);
+        letter-spacing: 0.03em;
+      }
+      .post-card {
+        background: #f3d7fa;
+        color: #17131c;
+        border: 1px solid #17131c;
+      }
+      .post-card::before {
+        content: "SAME TEE / DIFFERENT MOOD";
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        z-index: 3;
+        transform: rotate(4deg);
+        max-width: calc(100% - 2rem);
+        padding: 0.5rem 0.75rem;
+        background: #e8ff54;
+        font: 0.58rem var(--font-mono);
+      }
+      .post-card::after {
+        content: "NO RULES";
+        position: absolute;
+        left: 48%;
+        top: 46%;
+        z-index: 2;
+        transform: rotate(-12deg);
+        color: #f3472f;
+        font: 700 clamp(1rem, 2vw, 1.7rem) var(--font-display);
+      }
+      .post-card .hero-shirt {
+        width: 51%;
+        right: 0;
+        bottom: 0;
+        transform: rotate(5deg);
+      }
+      .post-card .button-primary {
+        background: #f3472f;
+        border-color: #17131c;
+        color: #17131c;
+        box-shadow: 4px 4px 0 #17131c;
+      }
+      .post-tag {
+        position: absolute;
+        left: 53%;
+        top: 12%;
+        z-index: 2;
+        padding: 0.55rem 0.7rem;
+        background: #e8ff54;
+        border: 1px solid #17131c;
+        border-radius: 50%;
+        transform: rotate(9deg);
+        font: 0.62rem var(--font-mono);
+      }
+      .annotation-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 1.2rem;
+      }
+      .annotation-grid h3 {
+        font-size: 0.85rem;
+        letter-spacing: 0;
+      }
+      .annotation-grid p {
+        margin-top: 0.5rem;
+        font-size: 0.77rem;
+        color: var(--color-muted);
+      }
+      .annotation-grid a {
+        color: var(--color-ink);
+      }
+      .same-copy {
+        margin-top: 2rem;
+        padding: 1rem 1.2rem;
+        background: var(--color-soft);
+        font-size: 0.78rem;
+      }
+      @media (max-width: 760px) {
+        .preview-grid,
+        .annotation-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-card {
+          min-height: 500px;
+        }
+        .hero-card h2 {
+          font-size: clamp(2.7rem, 11vw, 4.3rem);
+        }
+      }
+      @media (max-width: 420px) {
+        .hero-card {
+          min-height: 470px;
+        }
+        .hero-shirt {
+          width: 62%;
+        }
+        .modern-card .hero-shirt,
+        .post-card .hero-shirt {
+          width: 60%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -51,44 +219,116 @@
     </header>
     <main id="main" class="wrap explore-page">
       <section class="explore-intro">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Same product / same words</p>
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span> Same product /
+          same words
+        </p>
         <h1>Two ways to say it.</h1>
-        <p>These are early directions for Lukewarm, a relaxed, contrarian Creator brand. The plain white T-shirt and offer stay the same so the visual choices are easier to compare.</p>
+        <p>
+          These are early directions for Lukewarm, a relaxed, contrarian Creator
+          brand. The plain white T-shirt and offer stay the same so the visual
+          choices are easier to compare.
+        </p>
       </section>
       <div class="preview-grid">
         <article class="preview">
-          <div class="preview-label"><span>A / Modernist</span><span>Grid · hierarchy · clarity</span></div>
-          <section class="hero-card modern-card" aria-labelledby="modern-title">
+          <div class="preview-label">
+            <span>A / Modernist</span><span>Grid · hierarchy · clarity</span>
+          </div>
+          <div class="hero-card modern-card">
             <p class="eyebrow">Lukewarm / 001</p>
             <h2 id="modern-title">Simple shirt.<br />Your point of view.</h2>
             <p>An ordinary white tee, ready for the way you wear it.</p>
-            <a class="button button-primary" href="index.html">See the T-shirt <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="index.html"
+              >See the T-shirt <span aria-hidden="true">↗</span></a
+            >
             <p class="modern-index">WHITE TEE — CLASSROOM DEMO</p>
-            <img class="hero-shirt" src="assets/white-shirt.svg" alt="Plain white T-shirt" width="800" height="880" />
-          </section>
+            <img
+              class="hero-shirt"
+              src="assets/white-shirt.svg"
+              alt="Plain white T-shirt"
+              width="800"
+              height="880"
+            />
+          </div>
           <div class="annotation-grid">
-            <div><h3>Reference & choices</h3><p><a href="https://www.moma.org/collection/works/5101">Herbert Bayer, <i>Architektur Lichtbilder Vortrag Professor Hans Poelzig</i>, 1926, MoMA</a>. A clear grid, asymmetrical type and one accent color organize the same offer.</p></div>
-            <div><h3>Intended effect & risk</h3><p>Should make product information quick to scan for both audiences. Risk: too orderly to communicate the contrarian personality.</p></div>
+            <div>
+              <h3>Reference &amp; choices</h3>
+              <p>
+                <a href="https://www.moma.org/collection/works/5101"
+                  >Herbert Bayer,
+                  <i>Architektur Lichtbilder Vortrag Professor Hans Poelzig</i>,
+                  1926, MoMA</a
+                >. A clear grid, asymmetrical type and one accent color organize
+                the same offer.
+              </p>
+            </div>
+            <div>
+              <h3>Intended effect &amp; risk</h3>
+              <p>
+                Should make product information quick to scan for both
+                audiences. Risk: too orderly to communicate the contrarian
+                personality.
+              </p>
+            </div>
           </div>
         </article>
         <article class="preview">
-          <div class="preview-label"><span>B / Postmodernist</span><span>Mixing · interruption · play</span></div>
-          <section class="hero-card post-card" aria-labelledby="post-title">
+          <div class="preview-label">
+            <span>B / Postmodernist</span
+            ><span>Mixing · interruption · play</span>
+          </div>
+          <div class="hero-card post-card">
             <p class="eyebrow">Lukewarm / 001</p>
             <h2 id="post-title">Simple shirt.<br />Your point of view.</h2>
             <p>An ordinary white tee, ready for the way you wear it.</p>
-            <a class="button button-primary" href="index.html">See the T-shirt <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="index.html"
+              >See the T-shirt <span aria-hidden="true">↗</span></a
+            >
             <span class="post-tag">WELL, MAYBE.</span>
-            <img class="hero-shirt" src="assets/white-shirt.svg" alt="Plain white T-shirt" width="800" height="880" />
-          </section>
+            <img
+              class="hero-shirt"
+              src="assets/white-shirt.svg"
+              alt="Plain white T-shirt"
+              width="800"
+              height="880"
+            />
+          </div>
           <div class="annotation-grid">
-            <div><h3>Reference & choices</h3><p><a href="https://www.moma.org/collection/works/292736">Ettore Sottsass, <i>Carlton</i> Room Divider, 1981, manufactured by Memphis, MoMA</a>. Playful geometry, bright accents and a deliberate collision of visual cues inform this direction.</p></div>
-            <div><h3>Intended effect & risk</h3><p>Should feel memorable and comfortably rule-breaking for the creative-style visitor. Risk: layered decoration could distract from the offer or size information.</p></div>
+            <div>
+              <h3>Reference &amp; choices</h3>
+              <p>
+                <a href="https://www.moma.org/collection/works/292736"
+                  >Ettore Sottsass, <i>Carlton</i> Room Divider, 1981,
+                  manufactured by Memphis, MoMA</a
+                >. Playful geometry, bright accents and a deliberate collision
+                of visual cues inform this direction.
+              </p>
+            </div>
+            <div>
+              <h3>Intended effect &amp; risk</h3>
+              <p>
+                Should feel memorable and comfortably rule-breaking for the
+                creative-style visitor. Risk: layered decoration could distract
+                from the offer or size information.
+              </p>
+            </div>
           </div>
         </article>
       </div>
-      <p class="same-copy"><strong>Held constant in both:</strong> “Simple shirt. Your point of view.” / “An ordinary white tee, ready for the way you wear it.” / “See the T-shirt.” The supporting line describes a styling invitation, not a verified fit or fabric claim.</p>
-      <p class="guide-note">These previews are a comparison, not a selected direction. The modernist notes draw on MoMA’s description of Bayer’s use of sans-serif type, a grid and asymmetry; the postmodernist notes draw on the visible “Carlton” room divider and MoMA’s framing of postmodernism as eclectic mixing of styles. Links open the original collection records.</p>
+      <p class="same-copy">
+        <strong>Held constant in both:</strong> “Simple shirt. Your point of
+        view.” / “An ordinary white tee, ready for the way you wear it.” / “See
+        the T-shirt.” The supporting line describes a styling invitation, not a
+        verified fit or fabric claim.
+      </p>
+      <p class="guide-note">
+        These previews are a comparison, not a selected direction. The modernist
+        notes draw on MoMA’s description of Bayer’s use of sans-serif type, a
+        grid and asymmetry; the postmodernist notes draw on the visible
+        “Carlton” room divider and MoMA’s framing of postmodernism as eclectic
+        mixing of styles. Links open the original collection records.
+      </p>
     </main>
   </body>
 </html>
