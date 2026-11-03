@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Baseline ready to try; brand decisions pending.
+- Stage: Brand decisions in progress; starter setup checks reported by learner.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: Pending learner scope agreement.
-- Next small decision: Confirm the first slice after trying the neutral storefront.
+- Status: BRAND-001 scope agreed; visual direction and implementation pending.
+- Next small decision: Compare two same-copy visual previews, then choose which direction to keep.
 
 ## Product boundary
 
@@ -21,22 +21,22 @@ The primary need guides the page. Give the secondary card one contrasting need t
 
 | Tiny card                             | Primary audience          | Secondary audience        |
 | ------------------------------------- | ------------------------- | ------------------------- |
-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |
-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |
-| Concern before choosing               | Not chosen yet            | Not chosen yet            |
-| What the page should help them decide | Not chosen yet            | Not chosen yet            |
+| Person in a concrete situation        | Uses a simple shirt to express creative style | Wants an everyday basic and clear size/price information |
+| Goal or meaning they seek             | A more defined look while feeling loose | Find a straightforward everyday option |
+| Concern before choosing               | Not chosen yet | Clear size and price details |
+| What the page should help them decide | Not chosen yet | Whether the size and fictional price suit them |
 | Evidence or assumption                | Assumption; not validated | Assumption; not validated |
 
 ## Early brand brief
 
 | Decision                                 | Agreement      |
 | ---------------------------------------- | -------------- |
-| Brand name                               | Not chosen yet |
+| Brand name                               | Lukewarm |
 | One-sentence promise                     | Not chosen yet |
-| Primary archetype: the brand's character | Not chosen yet |
-| Three voice traits                       | Not chosen yet |
+| Primary archetype: the brand's character | Creator |
+| Three voice traits                       | Laid-back, contrarian; third trait not chosen yet |
 | One example line in this voice           | Not chosen yet |
-| Learner's predicted audience effect      | Not chosen yet |
+| Learner's predicted audience effect      | Not yet stated; learner described the voice as “laid-back and contrarian” |
 
 ## Visual decision
 
