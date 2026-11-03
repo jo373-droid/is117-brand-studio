@@ -1297,23 +1297,39 @@ legend {
   }
 }
 
-
 /* Lukewarm identity: playful interruptions around clear product information. */
-.starter-notice {
+.lukewarm-theme .starter-notice {
   background: var(--color-accent);
   color: var(--color-ink);
 }
-.starter-notice a { font-weight: 700; }
-.site-header { border-bottom: 2px solid var(--color-ink); }
-.wordmark { width: 160px; }
-.main-nav { font-weight: 650; }
-.nav-link[aria-current="page"] { border-bottom-width: 2px; }
-.product-visual {
+
+.lukewarm-theme .starter-notice a {
+  font-weight: 700;
+}
+
+.lukewarm-theme .site-header {
+  border-bottom: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .wordmark {
+  width: 160px;
+}
+
+.lukewarm-theme .main-nav {
+  font-weight: 650;
+}
+
+.lukewarm-theme .nav-link[aria-current="page"] {
+  border-bottom-width: 2px;
+}
+
+.lukewarm-theme .product-visual {
   overflow: hidden;
   border: 2px solid var(--color-ink);
   background: var(--color-soft);
 }
-.product-visual::before {
+
+.lukewarm-theme .product-visual::before {
   content: "";
   position: absolute;
   width: 34%;
@@ -1324,46 +1340,92 @@ legend {
   border-radius: 50%;
   background: var(--color-accent);
 }
-.shirt-image { position: relative; z-index: 1; }
-.visual-label { z-index: 2; }
-.visual-label span:last-child {
-  padding: .4rem .65rem;
+
+.lukewarm-theme .shirt-image {
+  position: relative;
+  z-index: 1;
+}
+
+.lukewarm-theme .visual-label {
+  z-index: 2;
+}
+
+.lukewarm-theme .visual-label span:last-child {
+  padding: 0.4rem 0.65rem;
   border: 1px solid var(--color-ink);
   background: var(--color-accent);
   transform: rotate(6deg);
 }
-.image-caption {
+
+.lukewarm-theme .image-caption {
   position: relative;
   z-index: 2;
   background: var(--color-ink);
   color: var(--color-paper);
 }
-.product-information h1 { max-width: 10ch; }
-.product-intro { font-weight: 600; }
-.price { color: var(--color-action); }
-.button-primary {
+
+.lukewarm-theme .product-information h1 {
+  max-width: none;
+  font-size: clamp(3.6rem, 5vw, 4.8rem);
+}
+
+.lukewarm-theme .product-intro {
+  font-weight: 600;
+}
+
+.lukewarm-theme .price {
+  color: var(--color-action);
+}
+
+body.lukewarm-theme .button-primary {
   background: var(--color-action);
   border-color: var(--color-ink);
   color: var(--color-ink);
   box-shadow: 4px 4px 0 var(--color-ink);
 }
-.button-primary:hover {
+
+body.lukewarm-theme .button-primary:hover {
   background: var(--color-accent);
   color: var(--color-ink);
 }
-.starter-next {
+
+.lukewarm-theme .starter-next {
   background: var(--color-soft);
   border: 2px solid var(--color-ink);
 }
-.starter-next > div {
+
+.lukewarm-theme .starter-next > div {
   border-top: 1px solid var(--color-ink);
   padding-top: 1rem;
 }
-.starter-next h3 { font-size: 1.1rem; }
-.starter-next .guide-note { grid-column: 1 / -1; margin: 0; }
-.site-footer { border-top: 2px solid var(--color-ink); }
-.color-swatch { border: 2px solid var(--color-ink); }
-@media (max-width: 760px) {
-  .product-visual::before { width: 42%; }
-  .starter-next > .guide-note { grid-column: 1; }
+
+.lukewarm-theme .starter-next h3 {
+  font-size: 1.1rem;
+}
+
+.lukewarm-theme .starter-next .guide-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.lukewarm-theme .site-footer {
+  border-top: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .color-swatch {
+  border: 2px solid var(--color-ink);
+}
+
+.lukewarm-theme .palette-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width <= 760px) {
+  .lukewarm-theme .product-visual::before {
+    width: 42%;
+  }
+
+  .lukewarm-theme .starter-next > .guide-note {
+    grid-column: 1;
+  }
 }
