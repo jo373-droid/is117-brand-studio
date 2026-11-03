@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Brand decisions in progress; starter setup checks reported by learner.
+- Stage: Paired visual previews ready; storefront direction choice pending.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
 - Status: BRAND-001 scope agreed; visual direction and implementation pending.
-- Next small decision: Compare two same-copy visual previews, then choose which direction to keep.
+- Next small decision: Learner reviews both previews and chooses a direction with one visible detail.
 
 ## Product boundary
 
@@ -46,9 +46,9 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 
 | Item                                              | Agreement or evidence |
 | ------------------------------------------------- | --------------------- |
-| Shared headline / support / action                | Not chosen yet        |
-| Modernist preview, reference, and annotations     | Not chosen yet        |
-| Postmodernist preview, reference, and annotations | Not chosen yet        |
+| Shared headline / support / action                | “Simple shirt. Your point of view.” / “An ordinary white tee, ready for the way you wear it.” / “See the T-shirt.” |
+| Modernist preview, reference, and annotations     | `public/explorations.html`; Herbert Bayer, *Architektur Lichtbilder Vortrag Professor Hans Poelzig* (1926), MoMA; grid, asymmetry, sans-serif clarity; risk: may feel too orderly. |
+| Postmodernist preview, reference, and annotations | `public/explorations.html`; Ettore Sottsass, *Carlton* (1981), MoMA; playful geometry and mixed cues; risk: decoration may distract. |
 | Chosen direction and reason                       | Not chosen yet        |
 | Original SVG logo                                 | Not chosen yet        |
 | Monochrome and small-size variants                | Not chosen yet        |
